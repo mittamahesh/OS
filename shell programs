@@ -1,0 +1,41 @@
+==================
+    average
+==================
+echo "Enter the marks of the s1"
+read s1
+echo "Enter the marks of the s2"
+read s2
+echo "Enter the marks of the s3"
+read s3
+echo "Enter the marks of the s4"
+read s4
+echo "Enter the marks of the s5"
+read s5
+tot=$((s1+s2+s3+s4+s5))
+marks=$((tot/5))
+echo "average:" $marks
+if [ $marks -gt 90 ] && [ $marks -le 100 ]
+then
+        echo "Grade A"
+elif [ $marks -gt 80 ] && [ $marks -le 90 ]
+then
+        echo "Grade B"
+elif [ $marks -gt 70 ] && [ $marks -le 80 ]
+then
+        echo "Grade C"
+elif [ $marks -gt 60 ] && [ $marks -le 70 ]
+then
+        echo "Grade D"
+elif [ $marks -gt 50 ] && [ $marks -le 60 ]
+then
+        echo "Grade E"
+elif [ $marks -gt 40 ] && [ $marks -le 50 ]
+then
+        echo "Grade F"
+else
+        echo "FAIL"
+fi
+
+
+
+
